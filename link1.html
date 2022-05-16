@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Required Bootstrap meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Nell's Webpage</title>
+    </head>
+    <body>
+        <nav>
+            <ul class="nav nav-tabs nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="link1.html">Carrot Cake</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="link2.html">Banana Bread</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="link3.html">Blueberry Muffins</a>
+              </li>
+            </ul>
+        </nav>
+        <main class = "carrot">
+            <h1>Carrot Cake</h1>
+            <p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                             <img src="media/carrot.jpeg" alt="Carrot Cake">
+                        </div>
+                    <div class="col">
+                        <table class="table">
+                            <tr>
+                                <th>Ingredients</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td>Flour</td>
+                                <td>2 1/2 cup</td>
+                            </tr>
+                            <tr>
+                                <td>Baking powder</td>
+                                <td>1 1/4 tsp</td>
+                            </tr>
+                            <tr>
+                                <td>Baking Soda</td>
+                                <td>1 tsp</td>
+                            </tr>
+                            <tr>
+                                <td>Cinnamon</td>
+                                <td>1 1/4 tsp</td>
+                            </tr>
+                            <tr>
+                                <td>Nutmeg</td>
+                                <td>1/2 tsp</td>
+                            </tr>
+                            <tr>
+                                <td>Cloves</td>
+                                <td>1/8 tsp</td>
+                            </tr>
+                            <tr>
+                                <td>Salt</td>
+                                <td>1/2 tsp</td>
+                            </tr>
+                            <tr>
+                                <td>Eggs</td>
+                                <td>4 (large)</td>
+                            </tr>
+                            <tr>
+                                <td>Sugar</td>
+                                <td>1 1/2 cup</td>
+                            </tr>
+                            <tr>
+                                <td>Brown Sugar</td>
+                                <td>1/2 cup (packed)</td>
+                            </tr>
+                            <tr>
+                                <td>Vegetable Oil</td>
+                                <td>1 1/2 cup</td>
+                            </tr>
+                            <tr>
+                                <td>Carrots</td>
+                                <td>1 pound (peeled and grated)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <h3>Instructions</h3>
+            <ul>
+                <li>Heat oven to 350 degrees</li>
+                <li>Grease a 9 * 13 inch cake pan and line the bottom with parchment paper</li>
+                <li>Whisk together the flour, baking poweder, baking soda, spices, and salt in a large bowl and set aside</li>
+                <li>Whisk together the eggs and sugar for about one minute</li>
+                <li>Slowly add in the oil</li>
+                <li>Whisk in the floir mixture until combined</li>
+                <li>Stir in the Carrots</li>
+                <li>Pour batter into the pan and smooth the top</li>
+                <li>Bake for 35 to 40 minutes, turning halfway through</li>
+                <li>Let the cake cool in the pan for 2 hours</li>
+                <li>
+                    <button type="button" class="btn btn-primary" id="liveToastBtn">Cream Cheese Frosting</button>
+                        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                              <strong class="me-auto">Cream Cheese Frosting</strong>
+                              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body">
+                              <ul>
+                                  <li>8 oz cream cheese</li>
+                                  <li>5 tbs butter</li>
+                                  <li>1 tbs sour cream</li>
+                                  <li>1/2 tsp vanilla</li>
+                                  <li>1 1/4 cup powedered sugar</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <script>
+                            var toastTrigger = document.getElementById('liveToastBtn')
+                            var toastLiveExample = document.getElementById('liveToast')
+                            if (toastTrigger) {
+                              toastTrigger.addEventListener('click', function () {
+                                var toast = new bootstrap.Toast(toastLiveExample)
+                            
+                                toast.show()
+                              })
+                            }
+                        </script>
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>

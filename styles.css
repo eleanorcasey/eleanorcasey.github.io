@@ -1,0 +1,30 @@
+nav
+    {
+        font-family: "Lucida Console", "Courier New", monospace;
+    }
+main
+    {
+        font-family: "Lucida Handwriting", cursive;
+        padding: 25px;
+    }
+.home
+    {
+        text-align: center;
+        color: darkred;
+        background-color: lightpink;
+    }
+.carrot
+    {
+        color: darkgreen;
+        background-color: orange;
+    }
+.banana
+    {
+        color: black;
+        background-color: yellow;
+    }
+.blueberry
+    {
+        color: navy;
+        background-color: lightblue;
+    }
